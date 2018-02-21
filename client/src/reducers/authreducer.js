@@ -1,0 +1,11 @@
+
+var auth = function(state = null, action){
+    switch(action.type){
+        case 'Fetch_User':
+            return action.payload || false;
+        default:
+            return state;
+    }
+};
+
+export default auth;
